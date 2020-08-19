@@ -49,7 +49,7 @@
   "documents": [ -- массив документов
     {
       "description": "string", -- описание документа
-      "details": [ -- дополнительные аттрибуты для документа (в версии 1.0 действует только для XMLDSIG-T)
+      "details": [ -- дополнительные аттрибуты для документа (в версии 1.0 действует только для XMLDSIG(-T))
         {
           "key": "elementToSignXPath" | "elementToPlaceXPath" , -- в версии 1.0 только место для подписи и элемент для подписи 
           "value": "string" -- значение
@@ -60,7 +60,7 @@
       "md5": "string", -- хэш md5 файла
       "mimeType": "string", -- MIME тип документа
       "sha1": "string", -- хэш sha1 файла
-      "signType": "CADES" | "XMLDSIG", -- тип подписи
+      "signType": "CADES" | "XMLDSIG" | "CADES-T" | "XMLDSIG-T", -- тип подписи
       "size": 0, -- размер файла
     }
   ],
